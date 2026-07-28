@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 public class PoolManager : MonoBehaviour
 {
+    public static PoolManager Instance {get; private set;}
+    private void Awake()
+    {
+        Instance = this;
+    }
     private Dictionary<GameObject, Pool> pools = new Dictionary<GameObject, Pool>();
     public void RegisterPrefab(GameObject prefab)
     {

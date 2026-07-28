@@ -84,9 +84,12 @@ public class ShooterReticlePointer : MonoBehaviour
             ResetParams();
         }
 
-        if ((Google.XR.Cardboard.Api.IsTriggerPressed || Input.GetMouseButtonDown(0)) && IsInteractive(_gazedAtObject))
+        if ((Google.XR.Cardboard.Api.IsTriggerPressed || Input.GetMouseButtonDown(0)))
         {
-            _gazedAtObject.SendMessage("OnPointerClick");
+            if (IsInteractive(_gazedAtObject))
+            {
+                _gazedAtObject.SendMessage("OnPointerClick");
+            }
             PlayAnimation(clickAnimation);
         }
     }
