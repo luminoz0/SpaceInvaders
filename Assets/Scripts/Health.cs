@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     private Slider healthSlider;
     private float currentHealth;
     public float CurrentHealth => currentHealth;
+    [SerializeField]
     private float maxHealth;
     public float MaxHealth{ set { maxHealth = value; }}
     [SerializeField]

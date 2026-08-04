@@ -19,16 +19,16 @@ public class PoolManager : MonoBehaviour
             pools.Add(prefab, newPool);
         }
     }
-    public GameObject GetObject(GameObject prefab, Vector3 position)
+    public GameObject GetObject(GameObject prefab, Vector3 position, bool isTurnedOff = false)
     {
         if (pools.TryGetValue(prefab, out Pool pool))
         {
-            return pool.InstantiateObject(position);
+            return pool.InstantiateObject(position, isTurnedOff);
         }
         else
         {
             RegisterPrefab(prefab);
-            return pools[prefab].InstantiateObject(position);
+            return pools[prefab].InstantiateObject(position, isTurnedOff);
         }
     }
 }
