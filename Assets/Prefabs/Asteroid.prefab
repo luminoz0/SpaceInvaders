@@ -272,10 +272,10 @@ MonoBehaviour:
   destroyAnimationName: Destroy
   destroidSoundName: ateroid_explode
   appearSoundName: asteroid_appear
-  rotateScript: {fileID: 3381675074622991275}
   speed: 10
-  damage: 20
-  distanceToTarget: 50
+  damage: 30
+  rotateScript: {fileID: 3381675074622991275}
+  distanceToTarget: 100
 --- !u!135 &2169277434451024795
 SphereCollider:
   m_ObjectHideFlags: 0
