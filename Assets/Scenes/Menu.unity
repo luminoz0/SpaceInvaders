@@ -209,7 +209,19 @@ MonoBehaviour:
   fadeAnimator: {fileID: 8049496566877045259}
   onSceneStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1057427928}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: menu_song
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &65186107
 Transform:
   m_ObjectHideFlags: 0
@@ -3228,6 +3240,10 @@ PrefabInstance:
     - target: {fileID: 3537409188034191492, guid: a3d85f2a86b48554388b01552bf9f1c8, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652445828666544185, guid: a3d85f2a86b48554388b01552bf9f1c8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7454658603770348571, guid: a3d85f2a86b48554388b01552bf9f1c8, type: 3}
       propertyPath: m_Name
